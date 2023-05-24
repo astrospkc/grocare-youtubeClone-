@@ -15,16 +15,17 @@ const Homepage = () => {
   return (
     <>
       <div className="flex flex-col relative">
-        <div className="sticky">
+        <div className="fixed md:w-[100%] top-0 ">
           <Navbar />
         </div>
         <div className="flex ">
-          <div className="fixed md:left-0  h-fit md:h-screen w-fit md:w-[10%] md:bg-black ">
+          <div className="fixed md:left-0  h-fit md:h-screen w-fit md:w-[10%] md:bg-black md:top-[15%] ">
             <SideBar />
           </div>
-          <div className="flex justify-center items-center w-full md:w-[90%] md:ml-auto ">
+          <div className="flex justify-center items-center w-full  md:w-[90%] md:ml-auto static mt-[10%]  ">
             <Routes>
               <Route path="/" element={<Mainpage />} />
+
               <Route path="/videopage" element={<VideoPage />} />
             </Routes>
           </div>

@@ -2,35 +2,25 @@ import React, { useContext } from "react";
 import { Data } from "../context/Datacontext";
 import Thumbnail from "./Thumbnail";
 import { Link } from "react-router-dom";
+import ThumbnailVideo from "./ThumbnailVideoPage";
 
-const Mainpage = () => {
+const SideThumbnailsVideoPage = () => {
   const { data } = useContext(Data);
   return (
     <>
-      <div className="grid grid-cols-4 gap-4">
+      <div className="grid md:grid-cols-1 ">
         {data &&
           data.map((e, id) => {
             const url = e.submission.mediaUrl;
-            const title = e.submission.title;
             console.log("url:", url);
-            console.log("title: ", title);
             return (
-              <Link
-                key={id}
-                to="/videopage"
-                state={{
-                  mediaUrl: url,
-                  title: title,
-                  name: e.submission.name,
-                  description: e.submission.description,
-                }}
-              >
+              <Link key={id} to="/videopage" state={{ mediaUrl: url }}>
                 <div className="mx-2">
-                  <Thumbnail
+                  <ThumbnailVideo
                     thumbnail={e.submission.thumbnail}
                     name={e.creator.name}
                     title={e.submission.title}
-                    // mediaUrl={e.submission.mediaUrl}
+                    //   mediaUrl={e.submission.mediaUrl}
                   />
                 </div>
               </Link>
@@ -41,4 +31,4 @@ const Mainpage = () => {
   );
 };
 
-export default Mainpage;
+export default SideThumbnailsVideoPage;

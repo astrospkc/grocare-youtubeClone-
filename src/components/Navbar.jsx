@@ -1,6 +1,7 @@
 import { useState } from "react";
 
 import { BsSearch } from "react-icons/bs";
+import { BsYoutube } from "react-icons/bs";
 
 const Navbar = () => {
   const [searchHandler, setSearchHandler] = useState(false);
@@ -11,7 +12,7 @@ const Navbar = () => {
   return (
     <>
       {/* logo  */}
-      <div className="flex flex-row  bg-red-400 ">
+      <div className="flex flex-row bg-black  ">
         <div className="flex flex-row m-6 ">
           {/* <img
             src="../images/videoLogo.png"
@@ -19,10 +20,13 @@ const Navbar = () => {
             className="h-10 w-10 md:h-14 md:w-14"
           /> */}
           <h1
-            className="text-white  text-md md:text-2xl ml-3"
+            className="text-white  text-md md:text-2xl ml-3 flex flex-row items-center"
             style={{ fontFamily: "Manrope" }}
           >
-            YOUTUBE
+            <span>
+              <BsYoutube className="text-red-600 text-3xl mr-2" />
+            </span>
+            <span>YOUTUBE</span>
           </h1>
         </div>
         {/* search bar */}
