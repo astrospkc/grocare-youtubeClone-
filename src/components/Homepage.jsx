@@ -16,7 +16,7 @@ const Homepage = () => {
           <Navbar />
         </div>
         <div className="flex ">
-          <div className="fixed md:left-0  h-fit md:h-screen w-fit md:w-[10%] md:bg-black md:top-[9%] ">
+          <div className="fixed md:left-0  h-fit md:h-screen w-fit md:w-[10%] md:bg-black md:top-[8%] ">
             <SideBar />
           </div>
           <div className="flex justify-center items-center w-full  md:w-[90%] md:ml-auto static mt-[6%]  ">
