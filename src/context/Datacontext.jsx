@@ -17,8 +17,8 @@ const Datacontext = (props) => {
       const info = await res.json();
       console.log(info.data.posts);
       const infos = info.data.posts;
+      console.log(infos);
       setData((prevData) => [...prevData, ...infos]);
-      console.log(data);
     } catch (error) {
       console.log("error fetching data: ", error);
     }

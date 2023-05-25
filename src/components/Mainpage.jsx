@@ -7,7 +7,7 @@ const Mainpage = () => {
   const { data } = useContext(Data);
   return (
     <>
-      <div className="grid grid-cols-4 gap-4">
+      <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
         {data &&
           data.map((e, id) => {
             const url = e.submission.mediaUrl;
@@ -25,11 +25,12 @@ const Mainpage = () => {
                   description: e.submission.description,
                 }}
               >
-                <div className="mx-2">
+                <div className="mx-4">
                   <Thumbnail
                     thumbnail={e.submission.thumbnail}
                     name={e.creator.name}
                     title={e.submission.title}
+                    pic={e.creator.pic}
                     // mediaUrl={e.submission.mediaUrl}
                   />
                 </div>

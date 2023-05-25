@@ -12,7 +12,7 @@ const Navbar = () => {
   return (
     <>
       {/* logo  */}
-      <div className="flex flex-row bg-black  ">
+      <div className="flex flex-row bg-black ">
         <div className="flex flex-row m-6 ">
           {/* <img
             src="../images/videoLogo.png"
@@ -21,18 +21,18 @@ const Navbar = () => {
           /> */}
           <h1
             className="text-white  text-md md:text-2xl ml-3 flex flex-row items-center"
-            style={{ fontFamily: "Manrope" }}
+            style={{ fontFamily: "Dosis" }}
           >
             <span>
-              <BsYoutube className="text-red-600 text-3xl mr-2" />
+              <BsYoutube className="text-red-600 text-3xl mr-2  " />
             </span>
-            <span>YOUTUBE</span>
+            <span>YouTube</span>
           </h1>
         </div>
         {/* search bar */}
         <div className="flex flex-row justify-center items-center">
           <div
-            className="flex  justify-center items-center text-gray-500 text-bold text-xl  hover:text-white md:hidden"
+            className="flex  justify-center items-center text-gray-500 text-bold text-xl md  hover:text-white md:hidden"
             onClick={search}
           >
             <BsSearch />
@@ -42,12 +42,12 @@ const Navbar = () => {
             className={
               searchHandler
                 ? "flex justify-center items-center  w-full"
-                : "hidden md:flex justify-center items-center w-5/6"
+                : "hidden md:flex justify-center items-center w-5/6 "
             }
           >
             <input
               type="text"
-              className="rounded-2xl h-9 w-min bg-gray-700 p-3"
+              className="rounded-2xl h-9 w-min bg-black border-2 border-gray-600 p-3"
               placeholder="Search"
             />
           </div>

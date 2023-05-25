@@ -20,6 +20,7 @@ const SideThumbnailsVideoPage = () => {
                     thumbnail={e.submission.thumbnail}
                     name={e.creator.name}
                     title={e.submission.title}
+                    pic={e.creator.pic}
                     //   mediaUrl={e.submission.mediaUrl}
                   />
                 </div>

@@ -9,7 +9,7 @@ const VideoPage = () => {
 
   return (
     <>
-      <div className="flex flex-row  w-full">
+      <div className="flex  flex-col md:flex-row  w-full pt-3">
         <div className="flex flex-col  md:w-[60%]  md:ml-auto">
           <div className="flex justify-center items-center">
             <iframe src={mediaUrl} height="540" frameborder="0" />
@@ -17,10 +17,10 @@ const VideoPage = () => {
           <div className="text-white">
             <h1 className=" text-xl font-bold">{title}</h1>
             <h1>{name}</h1>
-            <p>{description}</p>
+            <p className="bg-gray-500 p-2 rounded-2xl">{description}</p>
           </div>
         </div>
-        <div className="  md:w-[30%] md:ml-auto bg-gray-900 shadow-lg">
+        <div className="  md:w-[30%] md:ml-auto pt-6 bg-gray-900 shadow-lg">
           <SideThumbnailsVideoPage />
         </div>
       </div>
