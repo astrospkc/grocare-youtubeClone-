@@ -14,7 +14,16 @@ const SideThumbnailsVideoPage = () => {
             const url = e.submission.mediaUrl;
             console.log("url:", url);
             return (
-              <Link key={id} to="/videopage" state={{ mediaUrl: url }}>
+              <Link
+                key={id}
+                to="/videopage"
+                state={{
+                  mediaUrl: url,
+                  title: e.submission.title,
+                  name: e.submission.name,
+                  description: e.submission.description,
+                }}
+              >
                 <div className="mx-2">
                   <ThumbnailVideo
                     thumbnail={e.submission.thumbnail}
