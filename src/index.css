@@ -7,6 +7,22 @@
 @layer base {
   body {
     background-color: #212529;
+    /* background-color: white; */
     font-family: "Roboto Mono", monospace;
+  }
+
+  .thumbnailvideo {
+    /* position: relative; */
+    animation: thumbnail 2s ease-in 0.7s 1 normal;
+    /* animation: name duration timing-function delay iteration-count direction
+      /* fill-mode; */
+  }
+  @keyframes thumbnail {
+    0% {
+      width: 0%;
+    }
+    100% {
+      width: 100%;
+    }
   }
 }

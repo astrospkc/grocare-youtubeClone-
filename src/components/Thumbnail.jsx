@@ -7,7 +7,7 @@ const Thumbnail = (props) => {
 
   return (
     <>
-      <div className="flex flex-col hover:shadow-lg  hover:cursor-pointer mx-4 md:mx-auto ">
+      <div className="flex flex-col shadow-lg hover:shadow-black  hover:cursor-pointer mx-4 md:mx-auto ">
         <div className="  rounded-lg mb-2 overflow-hidden">
           <img src={thumbnail} alt="" className="" />
         </div>

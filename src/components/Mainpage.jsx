@@ -23,6 +23,7 @@ const Mainpage = () => {
                   title: title,
                   name: e.submission.name,
                   description: e.submission.description,
+                  pic: e.creator.pic,
                 }}
               >
                 <div className="mx-4">

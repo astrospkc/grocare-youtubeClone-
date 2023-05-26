@@ -23,7 +23,7 @@ const Datacontext = (props) => {
       console.log("error fetching data: ", error);
     }
   };
-
+  console.log(data);
   // scroll event handler
   const handleScroll = () => {
     const windowHeight =
